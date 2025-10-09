@@ -1,13 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #1F2937;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #1F2937;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 100px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #E5E7EB;
+      font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #1F2937;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 100px;
+    }
+
+    .hero-text {
+      max-width: 45%;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #E5E7EB;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      background-color: #3882F6;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hero-image {
+      background-color: #6B7280;
+      color: white;
+      width: 400px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Info Section */
+    .info-section {
+      padding: 60px 100px;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .info-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .box {
+      border: 2px solid #3882F6;
+      border-radius: 10px;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    .info-box {
+      max-width: 150px;
+    }
+
+    .info-box p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    /* Quote Section */
+    .quote {
+      background-color: #E5E7EB;
+      padding: 80px 200px;
+      font-size: 20px;
+      font-style: italic;
+      color: #1F2937;
+    }
+
+    .quote-author {
+      text-align: right;
+      font-weight: bold;
+      margin-top: 15px;
+      font-style: normal;
+    }
+
+    /* Call to Action */
+    .cta {
+      background-color: #3882F6;
+      color: white;
+      margin: 70px 100px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+    }
+
+    .cta-text h3 {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .cta-text p {
+      color: #E5E7EB;
+      font-size: 14px;
+    }
+
+    .cta button {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 8px;
+      padding: 8px 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1F2937;
+      color: #E5E7EB;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-    <p>Welcome to placement</p>
-    <p>We are excited to train on mern stack</p>
-    <p>This is Madhu's mern placement project</p>
+
+  <header>
+    <div class="logo">Header Logo</div>
+    <nav>
+      <ul>
+        <li><a href="#">header link one</a></li>
+        <li><a href="#">header link two</a></li>
+        <li><a href="#">header link three</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>This website is awesome</h1>
+      <p>This website has some subtext that goes here under the main title. It’s a smaller font and the color is lower contrast.</p>
+      <button>Sign up</button>
+    </div>
+    <div class="hero-image">this is a placeholder for an image</div>
+  </section>
+
+  <section class="info-section">
+    <h2>Some random information.</h2>
+    <div class="info-boxes">
+      <div class="info-box">
+        <div class="box"></div>
+        <p>This is some subtext under an illustration or image</p>
+      </div>
+      <div class="info-box">
+        <div class="box"></div>
+        <p>This is some subtext under an illustration or image</p>
+      </div>
+      <div class="info-box">
+        <div class="box"></div>
+        <p>This is some subtext under an illustration or image</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <p>This is an inspiring quote, or a testimonial from a customer. Maybe it’s just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+    <div class="quote-author">- Thor, God of Thunder</div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-text">
+      <h3>Call to action! It’s time!</h3>
+      <p>Sign up for our product by clicking that button right over there!</p>
+    </div>
+    <button>Sign up</button>
+  </section>
+
+  <footer>
+    Copyright © The Odin Project 2021
+  </footer>
+
 </body>
 </html>
