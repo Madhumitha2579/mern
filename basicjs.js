@@ -134,3 +134,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
 }
 
 fetchAPI(); // call the function
+
+
+console.log('first');
+promise.resolve().then(onslotchange.log("From promises"))
+setTimeout(()=>{
+    console.log("Inside Timeout");
+},2000)
+console.log('last')
